@@ -1,0 +1,16 @@
+{
+  "name": "Bundle Explorer",
+  "description": "Lists and reads the files bundled with the app. Shows the storage and SQLite bridges plus bundled resources.",
+  "author": "Konprostart",
+  "bridges": [
+    "sqlite",
+    "storage"
+  ],
+  "added": "2026-10-19",
+  "resources": [
+    {
+      "name": "data/sample.json",
+      "size": 116
+    }
+  ]
+}

@@ -1,0 +1,35 @@
+name: showcase-index
+
+on:
+  pull_request:
+    branches: [main]
+  push:
+    branches: [main]
+
+permissions:
+  contents: write
+
+jobs:
+  index:
+    name: Validate and refresh showcase index
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Check showcase.json is up to date
+        run: python3 tools/build_index.py --check
+
+      - name: Regenerate index and commit
+        if: github.event_name == 'push'
+        run: |
+          python3 tools/build_index.py
+          if git diff --quiet -- showcase.json; then
+            echo "Index already up to date."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add showcase.json
+          git commit -m "chore: regenerate showcase index"
+          git push origin HEAD:main

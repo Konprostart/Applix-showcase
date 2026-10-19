@@ -1,0 +1,9 @@
+{
+  "name": "Compass",
+  "description": "Live compass using the device sensors - heading, direction and bearing in degrees.",
+  "author": "Konprostart",
+  "bridges": [
+    "sensor"
+  ],
+  "added": "2026-10-19"
+}

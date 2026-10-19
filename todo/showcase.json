@@ -1,0 +1,10 @@
+{
+  "name": "Todo List",
+  "description": "Task list with checkboxes - add, complete and delete. Data is stored on the device with the storage bridge.",
+  "author": "Konprostart",
+  "bridges": [
+    "load",
+    "save"
+  ],
+  "added": "2026-10-19"
+}

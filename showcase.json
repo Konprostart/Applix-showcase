@@ -1,0 +1,53 @@
+{
+  "base_url": "https://raw.githubusercontent.com/Konprostart/Applix-showcase/main",
+  "apps": [
+    {
+      "slug": "alarmtest",
+      "name": "Alarm Test",
+      "description": "Schedules a real alarm that fires even when the app is closed, with a notification and vibration.",
+      "author": "Konprostart",
+      "bridges": [
+        "alarm",
+        "notification",
+        "vibration"
+      ],
+      "resourceCount": 0,
+      "resourceSize": 0
+    },
+    {
+      "slug": "bundledemo",
+      "name": "Bundle Explorer",
+      "description": "Lists and reads the files bundled with the app. Shows the storage and SQLite bridges plus bundled resources.",
+      "author": "Konprostart",
+      "bridges": [
+        "sqlite",
+        "storage"
+      ],
+      "resourceCount": 1,
+      "resourceSize": 116
+    },
+    {
+      "slug": "compass",
+      "name": "Compass",
+      "description": "Live compass using the device sensors - heading, direction and bearing in degrees.",
+      "author": "Konprostart",
+      "bridges": [
+        "sensor"
+      ],
+      "resourceCount": 0,
+      "resourceSize": 0
+    },
+    {
+      "slug": "todo",
+      "name": "Todo List",
+      "description": "Task list with checkboxes - add, complete and delete. Data is stored on the device with the storage bridge.",
+      "author": "Konprostart",
+      "bridges": [
+        "load",
+        "save"
+      ],
+      "resourceCount": 0,
+      "resourceSize": 0
+    }
+  ]
+}

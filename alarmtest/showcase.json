@@ -1,0 +1,11 @@
+{
+  "name": "Alarm Test",
+  "description": "Schedules a real alarm that fires even when the app is closed, with a notification and vibration.",
+  "author": "Konprostart",
+  "bridges": [
+    "alarm",
+    "notification",
+    "vibration"
+  ],
+  "added": "2026-10-19"
+}
